@@ -1,0 +1,12 @@
+{
+  "index": {
+    "fields": [
+      "repoID",
+      "name",
+      "author"
+    ]
+  },
+  "ddoc": "index-Repo",
+  "name": "index-Repo",
+  "type": "json"
+}

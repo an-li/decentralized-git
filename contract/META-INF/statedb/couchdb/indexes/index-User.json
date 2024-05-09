@@ -1,0 +1,10 @@
+{
+  "index": {
+    "fields": [
+      "name"
+    ]
+  },
+  "ddoc": "index-User",
+  "name": "index-User",
+  "type": "json"
+}

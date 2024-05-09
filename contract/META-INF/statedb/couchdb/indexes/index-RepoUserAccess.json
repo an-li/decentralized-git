@@ -1,0 +1,12 @@
+{
+  "index": {
+    "fields": [
+      "repoID",
+      "authorized",
+      "timestamp"
+    ]
+  },
+  "ddoc": "index-RepoUserAccess",
+  "name": "index-RepoUserAccess",
+  "type": "json"
+}
