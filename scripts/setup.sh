@@ -39,8 +39,6 @@ cd ..
 rm -rf go-ipfs
 rm -rf go-ipfs_v0.7.0_linux-amd64.tar.gz
 
-sud
-
 # Initialize local IPFS client
 rm -rf ~/.ipfs
 ipfs init

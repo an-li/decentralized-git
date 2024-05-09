@@ -7,7 +7,7 @@ from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import rsa
 
 
-def generate_rsa_key_pair() -> tuple[str, str]:
+def generate_rsa_key_pair(private_key_filepath: str) -> tuple[str, str]:
     """
     Generates a private and public keypair using RSA, then saves the private key to a pem file
 
@@ -29,6 +29,11 @@ def generate_rsa_key_pair() -> tuple[str, str]:
 
     # Serialize the public key to PEM format
     public_pem = extract_public_key_bytes(public_key)
+
+    # Write the private key to a file
+    os.makedirs(os.path.dirname(private_key_filepath), exist_ok=True)
+    with open(private_key_filepath, "wb") as f:
+        f.write(private_pem)
 
     return private_pem.decode("utf-8"), public_pem.decode("utf-8")
 
